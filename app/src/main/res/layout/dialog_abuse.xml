@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Report Abuse"
+            android:layout_marginTop="@dimen/dim_10"
+            android:textAllCaps="true"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_16"
+            android:visibility="visible" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="right|top"
+            android:background="@drawable/rounded_border"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spn_reason"
+                style="@style/SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:layout_margin="2dp"
+                android:entries="@array/array_reason" />
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop_down"
+                android:tint="@color/textSecondary" />
+        </RelativeLayout>
+
+        <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            custom:hint_text="Message" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_selector"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"
+            />
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ripple_blue_rounded"
+            android:gravity="center"
+            android:text="Abuse"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

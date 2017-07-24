@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="60.0dip"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:theme="@style/ActionBarTheme"
+        app:cardElevation="4.0dip"
+        app:layout_scrollFlags="enterAlways|scroll">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56.0dip">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="48.0dip"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Cancel/Return Order"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="16.0dip"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbarShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:background="@drawable/grey_gradient_top_bottom"
+        android:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColor"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="48.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/divider_horzontal_full" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="96.0dip"
+                        android:layout_height="96.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16.0dip"
+                        android:src="@drawable/phone" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_marginLeft="24.0dip"
+                        android:layout_marginRight="24.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:layout_toRightOf="@id/img"
+                        android:orientation="vertical">
+
+                        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvName"
+                            android:layout_centerHorizontal="true"
+                            android:maxLines="5"
+                            android:text="Need Help ?"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="@dimen/text_12"
+                            android:textStyle="bold" />
+
+                        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                            android:id="@+id/tvhelptext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBrand"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4.0dip"
+                            android:autoLink="phone|email"
+                            android:lineSpacingExtra="4.0px"
+                            android:text="More About Orby Mart"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="@dimen/text_13" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_full" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/divider_horzontal_full" />
+
+                <RelativeLayout
+                    android:id="@+id/rlNotifications"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_notif" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Notifications"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_12" />
+
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/divider_horzontal_marginleft56dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_FAQ"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_faq" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="FAQ"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_Contact_Us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_contact" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Contact Us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include                    android:visibility="gone"
+                    layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Customer_Service"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_contact" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Customer Service"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_About_Us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_home" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="About Us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Rate_Us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_rateus" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Rate Us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Return_Policy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_privacy" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Return Policy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Shiping_Policy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_country" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="Shipping Policy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_marginleft56dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_Terms_Of_Use"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <ImageView
+                        android:layout_width="24.0dip"
+                        android:layout_height="24.0dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_termsofuse" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="48.0dip"
+                        android:text="TERMS OF USE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="@dimen/text_13"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_horzontal_full" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

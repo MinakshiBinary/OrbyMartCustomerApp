@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/chkDefault"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jithin Manomohan"
+            android:textAllCaps="true"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_14"
+            android:textStyle="bold" />
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dip"
+            android:text="\#A2 Mapple, Regency Pinnacle Heights, \nThanisandra, Bengaluru, \nKarnataka, India"
+            android:textColor="@color/textSecondary"
+            android:textSize="@dimen/text_13" />
+
+        <LinearLayout
+            android:id="@+id/llAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode: "
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_13" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tvPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:text="560045"
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMobileNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llAddress"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number: "
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_13" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tvContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:text="956705112"
+                android:singleLine="true"
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4.0dip"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true" />
+    <LinearLayout
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnEdit"
+        android:background="@color/white"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:padding="8.0dip">
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/ic_remove" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chkDefault"
+        android:background="@color/white"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:padding="8.0dip">
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/ic_edit" />
+    </LinearLayout>
+    <include layout="@layout/divider_horzontal_full" android:layout_below="@+id/layAdd"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"></include>
+</RelativeLayout>

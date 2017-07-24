@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Sign Up"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    custom:hint_text="Mobile No" />
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etfirstname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        custom:hint_text="First Name" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etlastname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="textPersonName"
+                        custom:hint_text="Last Name" />
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        custom:hint_text="Email ID" />
+
+
+                <!--</LinearLayout>-->
+
+                <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:inputType="textPostalAddress"
+                    custom:hint_text="Address"
+                    android:visibility="gone"/>
+
+                <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                    android:id="@+id/etLandmark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:inputType="textPostalAddress"
+                    custom:hint_text="Landmark"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:visibility="gone">
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etArea"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="textPostalAddress"
+                        custom:hint_text="Area" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etPincode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        custom:hint_text="Pincode" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:visibility="gone">
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedEditText
+                        android:id="@+id/etCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        custom:hint_text="City" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.AnimatedAutoEditText
+                        android:id="@+id/etState"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        custom:hint_text="State" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnSignup"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24.0dip"
+        android:background="@drawable/ripple_blue_rounded"
+        android:orientation="vertical">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

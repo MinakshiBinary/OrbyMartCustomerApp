@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+
+    <include android:id="@+id/layHeader" layout="@layout/list_delivery_header" />
+
+    <FrameLayout
+        android:layout_below="@+id/layHeader"
+        android:id="@+id/layAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="You are not login please login first."
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_16" />
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/lblLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/dim_10"
+            android:padding="8dp"
+            android:textAllCaps="true"
+            android:background="@drawable/white_selector"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16"
+            android:typeface="serif" />
+    </LinearLayout>
+</RelativeLayout>

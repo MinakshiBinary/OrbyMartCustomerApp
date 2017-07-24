@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_120"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_user_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="@dimen/dim_70"
+            android:layout_height="@dimen/dim_70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_account_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_toRightOf="@id/iv_user"
+            android:orientation="vertical">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Sanket Patel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="sanket@binaryic.com"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_button"
+        android:layout_below="@+id/rl_top" />
+    <LinearLayout
+        android:id="@+id/ll_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dim_15">
+
+            <ImageView
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_setting_icon"
+                android:tint="@color/white" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dim_15"
+            android:layout_marginTop="@dimen/dim_15"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_sign_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dim_15">
+
+            <ImageView
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_sign_out_icon"
+                android:tint="@color/white" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Sign out"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="168.0dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_Profile"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:src="@drawable/ic_account_profile" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_toRightOf="@+id/civ_Profile"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Sanket"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_12"
+                    android:textStyle="bold" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBrand"
+                    android:layout_centerHorizontal="true"
+                    android:text="sanket@thinktanker.in"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_13" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tvCredits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBrand"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_My_Orders"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_orders" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="My Orders"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/divider_horzontal_margin16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlNotif"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notif" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="Notifications"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="168.0dip"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="4.0dip"
+                app:cardElevation="0.0dip"
+                app:contentPaddingLeft="8.0dip"
+                app:contentPaddingRight="8.0dip">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tvNotifCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_horzontal_margin16dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_address"
+                android:tint="@color/textPrimary" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48.0dip"
+                android:text="Saved Addresses"
+                android:textAllCaps="true"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_13"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider_horzontal_margin16dp"
+            android:visibility="visible" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <RelativeLayout
+            android:id="@+id/rl_SignOut"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80.0dip"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="16.0dip">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/textViewPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="SIGN OUT"
+                android:textAllCaps="true"
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_12"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="You are not login please login first."
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_16" />
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/lblLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/dim_10"
+            android:padding="8dp"
+            android:textAllCaps="true"
+            android:background="@drawable/white_selector"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16"
+            android:typeface="serif" />
+    </LinearLayout>
+</LinearLayout>

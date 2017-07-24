@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_10dp_margin"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_margin="@dimen/activity_10dp_margin"
+        android:id="@+id/txtTitleAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_15"
+        android:gravity="center"
+        android:text="New Text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_20" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleAlert"
+        android:layout_marginTop="@dimen/dim_20"
+        android:gravity="center"
+        android:text="Alert message detail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_14"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_10dp_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/bt_Gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_selector"
+            android:text="GALLERY"
+            android:textColor="@color/text"
+            android:textSize="@dimen/dim_15" />
+
+        <Button
+            android:id="@+id/bt_Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnYes"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_selector"
+            android:text="Camera"
+            android:textColor="@color/text"
+            android:textSize="@dimen/dim_15" />
+    </LinearLayout>
+</RelativeLayout>

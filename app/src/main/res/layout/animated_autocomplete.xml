@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:padding="4.0dip">
+
+        <AutoCompleteTextView
+            android:id="@+id/etanim_01"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:textColor="@color/text"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:textSize="@dimen/text_14" />
+
+    </RelativeLayout>
+    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+        android:id="@+id/tvanim_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:background="@color/white"
+        android:paddingLeft="8.0dip"
+        android:layout_centerVertical="true"
+        android:paddingRight="8.0dip"
+        android:text="Hint"
+        android:textAllCaps="true"
+        android:textColor="@color/colorMediumGray"
+        android:textSize="@dimen/text_13" />
+
+</RelativeLayout>

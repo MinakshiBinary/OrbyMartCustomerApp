@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.binaryic.customerapp.orbymart.Custom.TextViewPrimary xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="test"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:textColor="@color/textPrimary"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/text_14"
+    android:paddingLeft="@dimen/dim_10"
+    android:background="@drawable/white_selector"
+    >
+
+</com.binaryic.customerapp.orbymart.Custom.TextViewPrimary>

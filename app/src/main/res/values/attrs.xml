@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<attr name="cardCornerRadius" format="dimension" />
+    <attr name="cardElevation" format="dimension" />
+    <attr name="cardMaxElevation" format="dimension" />
+    <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardPreventCornerOverlap" format="boolean" />-->
+
+    <!--<attr name="textColorError" format="color" />-->
+    <!--<attr name="bottomSheetStyle" format="reference" />-->
+    <!--<attr name="behavior_hideable" format="boolean" />-->
+    <!--<attr name="behavior_peekHeight" format="dimension" />-->
+    <declare-styleable name="animatedEditText">
+        <attr name="hint_text" format="string" />
+        <attr name="android:inputType"/>
+    </declare-styleable>
+</resources>

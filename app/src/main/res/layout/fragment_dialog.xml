@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:gravity="center"
+        android:minHeight="80.0dip"
+        android:orientation="vertical">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:text="Title"
+            android:textColor="@color/textSecondary"
+            android:textSize="@dimen/text_16"
+            android:visibility="visible" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_selector"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"
+            />
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ripple_blue_rounded"
+            android:gravity="center"
+            android:text="DONE"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

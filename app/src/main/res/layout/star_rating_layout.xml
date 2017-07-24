@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <ImageView
+        android:id="@+id/iv_star1"
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star" />
+
+    <ImageView
+        android:id="@+id/iv_star2"
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:layout_marginLeft="8dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star" />
+
+    <ImageView
+        android:id="@+id/iv_star3"
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:layout_marginLeft="8dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star" />
+
+    <ImageView
+        android:id="@+id/iv_star4"
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:layout_marginLeft="8dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star" />
+
+    <ImageView
+        android:id="@+id/iv_star5"
+        android:layout_width="@dimen/dim_15"
+        android:layout_height="@dimen/dim_15"
+        android:layout_marginLeft="8dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star" />
+</LinearLayout>

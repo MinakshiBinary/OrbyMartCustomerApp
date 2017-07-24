@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1.0dip"
+    android:layout_marginLeft="0.5dip"
+    android:layout_marginRight="0.5dip"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.binaryic.customerapp.orbymart.Custom.ImageViewSquare
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4.0dip"
+            android:background="@drawable/circle_pdp_icon_container_button"
+            android:padding="6.0dip">
+
+            <ImageView
+                android:id="@+id/imgfav"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:src="@drawable/ic_fav_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProduct"
+            android:orientation="vertical"
+            android:padding="4.0dip">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="name"
+                android:textColor="@color/textColorProduct"
+                android:textSize="@dimen/text_18" />
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_5dp_margin"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="@dimen/activity_10dp_margin"
+                android:gravity="center">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewRS
+                    android:id="@+id/tvOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_10dp_margin"
+                    android:gravity="center"
+                    android:text="Rs 900"
+                    android:textColor="@color/textColorOldPrice"
+                    android:textSize="@dimen/text_14" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewRS
+                    android:id="@+id/tvSellingPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Rs. 1200"
+                    android:textColor="@color/textColorNewPrice"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

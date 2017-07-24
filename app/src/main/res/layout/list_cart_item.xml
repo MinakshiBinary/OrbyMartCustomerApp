@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="145.0dip"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/divider_big"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/RLMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="4dip">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="96.0dip"
+                android:layout_height="136.0dip"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_toRightOf="@+id/img"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1.0dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Tory Burch"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp">
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity : "
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="normal" />
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tvQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/imgChangeQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_down_drop"
+                        android:layout_marginLeft="8dp"
+                        android:padding="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:id="@+id/layQty"
+                    android:gravity="center_vertical">
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tv1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_border"
+                        android:text="1"
+                        android:textColor="@color/textSecondary" />
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tv2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_border"
+                        android:text="2"
+                        android:textColor="@color/textSecondary" />
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tv3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_border"
+                        android:text="3"
+                        android:textColor="@color/textSecondary" />
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tv4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_border"
+                        android:text="4"
+                        android:textColor="@color/textSecondary" />
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tv5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_border"
+                        android:text="5"
+                        android:textColor="@color/textSecondary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewRS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_strick_price"
+                        android:text="` "
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_11"
+                        android:textStyle="bold" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tvOldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_strick_price"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="1200"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewRS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="` "
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="bold" />
+
+                    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="120000"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottombutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16.0dip"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@drawable/ic_edit"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16.0dip">
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:src="@drawable/ic_remove" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

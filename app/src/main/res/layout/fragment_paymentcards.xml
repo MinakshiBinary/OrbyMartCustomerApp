@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etCardName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:background="@color/white"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+        android:ems="10"
+        android:hint="Name on card"
+        android:padding="16.0dip"
+        android:textColor="@color/black"
+        android:textColorHint="@color/textTernary"
+        android:textSize="14.0sp">
+
+        <requestFocus />
+    </EditText>
+
+    <include layout="@layout/divider_horzontal_margin16dp"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Card Number"
+            android:inputType="phone"
+            android:maxLength="23"
+            android:padding="16.0dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textTernary"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/imageViewIssuer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16.0dip" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_horzontal_margin16dp"></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layMonth"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Expiry Month (MM)"
+            android:inputType="date"
+            android:maxLength="2"
+            android:padding="16.0dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textTernary"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/textSecondary" />
+
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Expiry Year (YYYY)"
+            android:inputType="date"
+            android:maxLength="4"
+            android:padding="16.0dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textTernary"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_horzontal_margin16dp"></include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.0dip"
+        android:gravity="center_vertical"
+        android:id="@+id/layCVV"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etCVV"
+                android:layout_width="72.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="CVV"
+                android:inputType="numberPassword"
+                android:maxLength="3"
+                android:padding="16.0dip"
+                android:textColor="@color/black"
+                android:textColorHint="@color/textTernary"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:background="#1f000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="190.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16.0dip"
+            android:gravity="center|left|top"
+            android:text="CVV number is found mostly on the back of your card."
+            android:textColor="@color/textTernary"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnPay"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16.0dip"
+        android:background="@drawable/ripple_blue_rounded"
+        android:text="CONTINUE &amp; PAY"
+        android:textColor="@color/white"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+</LinearLayout>

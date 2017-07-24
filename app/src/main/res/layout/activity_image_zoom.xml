@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/product_image_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/product_detail_viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp" />
+
+        <com.binaryic.customerapp.orbymart.Custom.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/product_detail_viewPager"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip" />
+
+        <ImageView
+            android:id="@+id/product_detail_leftArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_left_arrow"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/product_detail_rightArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_right_arrow"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_close"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

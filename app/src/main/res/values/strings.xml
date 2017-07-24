@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">OrbyMart</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="proceed_to_payment">PROCEED TO PAYMENT</string>
+    <string name="social_signin_msg">Sign in with your social account</string>
+    <string name="email_signin_msg">Sign in with Mobile</string>
+    <string name="sign_up"><u>Sign up today</u></string>
+    <string name="skipp"><u>Skip</u></string>
+    <string name="login">Login</string>
+    <string name="forgot_pwd"><u>Forgotten password?</u></string>
+    <string name="txtCaptureImage">Capture Image</string>
+    <string name="txtOpenGallery">Choose from Gallery</string>
+
+    <string-array name="state">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Lakshadweep</item>
+        <item>Puducherry</item>
+    </string-array>
+    <string-array name="array_reason">
+        <item>Select Reason</item>
+        <item>Product not good</item>
+        <item>Product Damage</item>
+        <item>Color problem</item>
+    </string-array>
+</resources>

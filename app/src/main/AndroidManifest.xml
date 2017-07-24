@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.binaryic.customerapp.orbymart">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".Database.OrbyContentProvider"
+            android:authorities="com.binaryic.orbymart"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ImageZoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Activity.SavedAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PaymentsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.OrderActivity" />
+        <activity android:name=".Activity.ComingSoonActivity" />
+        <activity
+            android:name=".Activity.CaptureImageProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Activity.ReviewActivity"></activity>
+    </application>
+
+</manifest>

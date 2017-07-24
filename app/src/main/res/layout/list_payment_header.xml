@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip">
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/hdCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="CART"
+                android:textSize="@dimen/text_10"
+                android:textStyle="bold" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/hdDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="DELIVERY"
+                android:textSize="@dimen/text_10"
+                android:textStyle="bold" />
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/hdPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="PAYMENT"
+                android:textSize="@dimen/text_10"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="8.0dip">
+
+            <ImageView
+                android:id="@+id/tabInd_1"
+                android:layout_width="16.0dip"
+                android:layout_height="16.0dip"
+                android:layout_margin="8.0dip"
+                android:src="@drawable/ic_cart_indicator" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/backgroundColor" />
+
+            <ImageView
+                android:id="@+id/tabInd_2"
+                android:layout_width="16.0dip"
+                android:layout_height="16.0dip"
+                android:layout_margin="8.0dip"
+                android:src="@drawable/ic_cart_indicator" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/backgroundColor" />
+
+            <ImageView
+                android:id="@+id/tabInd_3"
+                android:layout_width="16.0dip"
+                android:layout_height="16.0dip"
+                android:layout_margin="8.0dip"
+                android:src="@drawable/ic_cart_indicator_select" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/backgroundColor" />
+</LinearLayout>

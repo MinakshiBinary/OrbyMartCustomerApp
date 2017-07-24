@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="@dimen/dim_15"
+    android:layout_marginRight="@dimen/dim_15"
+    android:layout_marginTop="@dimen/dim_10"
+    android:background="@color/white"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_order_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Order No: 8569123"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_16" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Delivered"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Placed on Wednesday, September 23, 2015"
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewRS
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="` "
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_18" />
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="500.00"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/textTernary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_shipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Shipment : "
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_shipment"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="3 items"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_view_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/white_selector"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="4dp"
+                    android:text="view Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_order_product_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Delivered on"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_14" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_delivery_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Tuesday, September 29, 2016"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="if you want to cancel order ? click below."
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_14" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/white_selector"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="Cancel Order"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

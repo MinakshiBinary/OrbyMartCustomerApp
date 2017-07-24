@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16.0dip"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"> 
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgMessage"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="36.0dip"
+                android:src="@drawable/lamp"/>
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:gravity="center"
+                android:lineSpacingExtra="3.0dip"
+                android:text="Make a wish \nAnd it would appear here."
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_16" />
+
+            <LinearLayout
+                android:id="@+id/btnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/tvMessage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/rounded_border_black"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tvBtnMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse collection"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_13"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

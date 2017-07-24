@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="drawerArrowStyle">@style/drawableStyle</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">#D43464</item>
+    </style>
+    <style name="ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/textSecondary</item>
+    </style>
+    <style name="drawableStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/textSecondary</item>
+        <item name="spinBars">true</item>
+    </style>
+    <style name="FullScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="paddingStart">0dp</item>
+        <item name="paddingEnd">0dp</item>
+    </style>
+
+
+</resources>

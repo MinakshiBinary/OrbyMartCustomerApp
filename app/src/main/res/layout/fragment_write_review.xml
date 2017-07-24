@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dim_10"
+                android:paddingTop="5dp">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Product name"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_16" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="500 ml pouch of milk"
+                    android:textColor="@color/textTernary"
+                    android:textSize="@dimen/text_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_star1"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:src="@drawable/ic_start_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_star2"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:src="@drawable/ic_start_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_star3"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:src="@drawable/ic_start_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_star4"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:src="@drawable/ic_start_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_star5"
+                    android:layout_width="@dimen/dim_20"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:src="@drawable/ic_start_gray" />
+            </LinearLayout>
+
+            <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Rate your experience"
+                android:textColor="@color/textSecondary"
+                android:textSize="@dimen/text_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review Title"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_11" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:background="@color/white"
+                    android:hint="Give Review Title"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/textPrimary"
+                    android:textColorHint="@color/textSecondary"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/et_anim_01"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:background="@color/textTernary" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_error_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:paddingRight="20.0dip"
+                    android:text="Enter Review"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="vertical">
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_11" />
+
+                <EditText
+                    android:id="@+id/et_experience"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:background="@color/white"
+                    android:hint="Share your experience about product"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/textPrimary"
+                    android:maxLines="3"
+                    android:textColorHint="@color/textSecondary"
+                    android:textSize="@dimen/text_16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/et_anim_01"
+                    android:layout_marginTop="@dimen/dim_10"
+                    android:background="@color/textTernary" />
+
+                <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+                    android:id="@+id/tv_error_experiance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:paddingRight="20.0dip"
+                    android:text="Enter experience"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_13"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_button_selector"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ec6e5f</color>
+    <color name="colorPrimaryDark">#cf5f53</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="orange">#fff37053</color>
+    <color name="textPrimary">#de000000</color>
+    <color name="textSecondary">#8a000000</color>
+    <color name="textTernary">#42000000</color>
+    <color name="transperant">#00000000</color>
+    <color name="backgroundColor">#ffededed</color>
+    <color name="black">#ff000000</color>
+    <color name="textColorProduct">#BC892B</color>
+    <color name="textColorOldPrice">#634B79</color>
+    <color name="textColorNewPrice">#E25359</color>
+    <color name="colorMediumGray">#BDBDBD</color>
+    <color name="white_90">#f2ffffff</color>
+    <color name="fragmentSubtitleText">#ffb4b7c0</color>
+    <color name="temp_color">#ff4dc1c2</color>
+    <color name="theme_green">#ec6e5f</color>
+    <color name="red">#ffdc4848</color>
+    <color name="green">#008000</color>
+    <color name="text">#ff333333</color>
+</resources>

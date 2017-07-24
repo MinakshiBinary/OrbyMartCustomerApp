@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColor"
+    android:clickable="true"
+    android:id="@+id/layWishMain"
+    >
+
+
+    <include
+        android:id="@+id/layMessage"
+        layout="@layout/info_view" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        /> 
+
+</RelativeLayout>

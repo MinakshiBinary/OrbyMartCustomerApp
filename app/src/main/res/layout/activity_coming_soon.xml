@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_coming_soon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.binaryic.orbymart.Activity.ComingSoonActivity">
+    <include
+        android:id="@+id/RLtopbar"
+        layout="@layout/toolbar_centered" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36.0dip"
+            android:src="@drawable/logo"/>
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:gravity="center"
+            android:lineSpacingExtra="3.0dip"
+            android:text="Sorry !\nComing Soon"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_16" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_160"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_160" />
+
+        <com.binaryic.customerapp.orbymart.Custom.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="8dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_capture_image_profile"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dim_25"
+            android:layout_height="@dimen/dim_25"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:tint="@color/colorPrimary"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:id="@+id/tv_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:layout_marginRight="@dimen/dim_10"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/white_selector"
+            android:textSize="@dimen/text_18"/>
+        <ImageView
+            android:id="@+id/img_reset_image"
+            android:layout_width="@dimen/dim_20"
+            android:layout_height="@dimen/dim_20"
+            android:layout_toLeftOf="@+id/tv_crop"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_selector"
+            android:layout_marginRight="@dimen/dim_10"
+            android:src="@drawable/ic_reload"
+            android:tint="@color/colorPrimary" />
+    </RelativeLayout>
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/img_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

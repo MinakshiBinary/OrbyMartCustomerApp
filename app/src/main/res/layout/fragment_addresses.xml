@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/backgroundColor">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerAddress"
+       android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnAddAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" /> 
+
+
+    <RelativeLayout
+        android:id="@+id/btnAddAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:foreground="?selectableItemBackground"
+        android:padding="16.0dip">
+
+        <com.binaryic.customerapp.orbymart.Custom.TextViewPrimary
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New address"
+            android:textAllCaps="true"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_13"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
